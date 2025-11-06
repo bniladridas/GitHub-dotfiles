@@ -68,7 +68,7 @@ To set up the Git hooks:
 
 ## Features
 
-- **Pre-commit checks**: Runs pre-commit hooks if available (includes Python linting with black/flake8/mypy, C++ formatting/linting with clang-format and clang-tidy, Rust formatting/linting/compilation with rustfmt/clippy, and general checks).
+- **Pre-commit checks**: Runs pre-commit hooks if available (includes Python linting with black/flake8/mypy, C++ formatting/linting with clang-format and clang-tidy, Rust formatting/linting/compilation with rustfmt/clippy, Bash linting with shellcheck, Dockerfile linting with hadolint, and general checks).
 - **YAML linting**: Runs check-yaml from pre-commit.
 - **Commit message validation**: Ensures messages follow conventional commit format (lowercase, ≤40 chars, proper type).
 - **Author identity verification**: Checks that commits are authored by "Niladri Das" with email "bniladridas@users.noreply.github.com".
