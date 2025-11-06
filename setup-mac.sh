@@ -39,6 +39,9 @@ brew install python
 echo "Installing Node.js and npm..."
 brew install node
 
+echo "Installing Ruby..."
+brew install ruby
+
 echo "Installing GitHub CLI..."
 brew install gh
 
