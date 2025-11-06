@@ -2,7 +2,7 @@
 # ==========================================================
 # Global Git pre-push hook
 # Author: Niladri Das
-# Purpose: Run pre-commit and yamllint checks (if available),
+# Purpose: Run pre-commit and yamllint checks (required),
 #          validate commit messages, and verify author info.
 # ==========================================================
 
