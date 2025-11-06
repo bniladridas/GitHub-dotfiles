@@ -22,6 +22,10 @@ repos:
   rev: v15.0.7
   hooks:
   - id: clang-format
+- repo: https://github.com/pocc/pre-commit-hooks
+  rev: v1.3.5
+  hooks:
+  - id: clang-tidy
 - repo: https://github.com/pre-commit/mirrors-mypy
   rev: v1.0.0
   hooks:
