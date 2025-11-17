@@ -82,24 +82,24 @@ else
 fi
 
 echo "Setting up Git config..."
-if [ -f ~/GitHub-dotfiles/.gitconfig ]; then
-  cp ~/GitHub-dotfiles/.gitconfig ~/.gitconfig
+if [ -f ~/github-dotfiles/.gitconfig ]; then
+  cp ~/github-dotfiles/.gitconfig ~/.gitconfig
   echo "Git aliases configured."
 else
   echo "Git config file not found; clone the repo first."
 fi
 
 echo "Setting up Git hooks..."
-git config --global core.hooksPath ~/GitHub-dotfiles/git-hooks
-chmod +x ~/GitHub-dotfiles/git-hooks/*
+git config --global core.hooksPath ~/github-dotfiles/git-hooks
+chmod +x ~/github-dotfiles/git-hooks/*
 
 echo "Configuring commit message scope brackets..."
 read -r -p "Choose bracket type for commit scopes (1 for [], 2 for ()): " bracket_choice
 if [ "$bracket_choice" = "1" ]; then
-  sed -i '' 's/(\[.+?\]|\(.+?\))/(\[.+\])/g' ~/GitHub-dotfiles/git-hooks/pre-push
+  sed -i '' 's/(\[.+?\]|\(.+?\))/(\[.+\])/g' ~/github-dotfiles/git-hooks/pre-push
   echo "Set to [] brackets."
 elif [ "$bracket_choice" = "2" ]; then
-  sed -i '' 's/(\[.+?\]|\(.+?\))/(\(.+\))/g' ~/GitHub-dotfiles/git-hooks/pre-push
+  sed -i '' 's/(\[.+?\]|\(.+?\))/(\(.+\))/g' ~/github-dotfiles/git-hooks/pre-push
   echo "Set to () brackets."
 else
   echo "Invalid choice, keeping default []."

@@ -7,7 +7,7 @@ This repository contains global Git hooks for maintaining consistent commit stan
 Clone this repository to your home directory:
 
 ```bash
-git clone https://github.com/bniladridas/GitHub-dotfiles.git ~/GitHub-dotfiles
+git clone https://github.com/bniladridas/github-dotfiles.git ~/github-dotfiles
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ git clone https://github.com/bniladridas/GitHub-dotfiles.git ~/GitHub-dotfiles
 For a new Mac, run the setup script to install Zsh, Homebrew, Python, Node.js, Ruby, Rust, LLVM, GitHub CLI, GitLab CLI, Docker CLI, opencode, and configure Git hooks globally. It also offers to log in to Docker Hub as 'harpertoken':
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bniladridas/GitHub-dotfiles/main/setup-mac.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/bniladridas/github-dotfiles/main/setup-mac.sh)"
 ```
 
 Or download and run the script manually.
@@ -31,13 +31,13 @@ The setup script automatically configures Git to use the hooks globally and make
 1. Make the hooks executable:
 
     ```bash
-    chmod +x ~/GitHub-dotfiles/git-hooks/*
+    chmod +x ~/github-dotfiles/git-hooks/*
     ```
 
 2. Configure Git to use these hooks globally:
 
     ```bash
-    git config --global core.hooksPath ~/GitHub-dotfiles/git-hooks
+    git config --global core.hooksPath ~/github-dotfiles/git-hooks
     ```
 
 3. Set your Git author identity:
