@@ -67,6 +67,9 @@ brew install shellcheck
 echo "Installing Docker CLI..."
 brew install docker
 
+echo "Installing QEMU..."
+brew install qemu
+
 echo "Setting up Docker Hub..."
 read -r -p "Do you want to log in to Docker Hub as 'harpertoken'? (y/N): " login_choice
 if [[ "$login_choice" =~ ^[Yy]$ ]]; then
